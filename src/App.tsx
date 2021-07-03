@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Avatar from "./Components/Avatar";
+import Button from "./Components/Button";
+import Spinner from "./Components/Spinner";
+import IMG from "./Components/avatar.png";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* AVATAR COMPONENT */}
+      <Avatar
+        appearance="circle" //circle or square
+        src={IMG} //link to image
+        size="small" //large or small
+      />
+
+
+      {/* Button COMPONENT */}
+      <Button
+        appearance="rounded" //sharp or rounded
+        size="small" //large or small
+        color="warning" // danger , warning, primary
+      />
+
+
+      {/* Spinner COMPONENT */}
+      <Spinner
+        size="huge" //small, big, huge
+      />
     </div>
   );
-}
+};
 
 export default App;

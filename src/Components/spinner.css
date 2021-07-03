@@ -1,0 +1,38 @@
+.Spinner0, .Spinner1, .Spinner2 {
+  display: flex;
+  justify-content: center;
+}
+
+.Spinner0::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+.Spinner1::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+.Spinner2::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+  }
+}
